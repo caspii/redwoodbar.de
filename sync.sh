@@ -1,3 +1,3 @@
-SOURCE=$(pwd)
+SOURCE=/home/wrede/repos/redwoodbar.de
 TARGET=b3rlin.net:/var/www/redwoodbar.de 
-cat "rsync -av --delete $SOURCE $TARGET"
+rsync -av --exclude '.*' --delete $SOURCE $TARGET
