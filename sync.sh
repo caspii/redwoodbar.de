@@ -1,3 +1,3 @@
-SOURCE=/home/wrede/repos/redwoodbar.de
-TARGET=b3rlin.net:/var/www/redwoodbar.de 
+SOURCE=.
+TARGET=wrede@casparwre.de:/var/www/redwoodbar.de 
 rsync -av --exclude '.*' --delete $SOURCE $TARGET
